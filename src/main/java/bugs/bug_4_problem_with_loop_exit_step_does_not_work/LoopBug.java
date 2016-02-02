@@ -17,7 +17,13 @@ public class LoopBug {
 
         while (input2 > 0) {
             System.out.println(total + "\nEnter another interger:  ");
-            total += entry.nextInt();
+            int input3 = entry.nextInt();
+            if(input3<=0){
+                System.out.println("You need to enter positive number! Good bye!!");
+                break;
+            }
+            total += input3;
+
         }
     }
 }
