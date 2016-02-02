@@ -1,6 +1,8 @@
 package bugs.bug_5_RectanglePlus_class_should_not_be_abstract;
 
-public abstract class RectanglePlus implements Relatable {
+import javax.print.DocFlavor;
+
+public class RectanglePlus implements Relatable {
 
     public int width = 0;
     public int height = 0;
@@ -41,19 +43,22 @@ public abstract class RectanglePlus implements Relatable {
 
     // a method required to implement
     // the Relatable interface
-    public int isLargerThan(Relatable other) {
+    public String isLarger(Relatable other) {
         RectanglePlus otherRect
                 = (RectanglePlus) other;
         if (this.getArea() < otherRect.getArea())
-            return -1;
+            return "not larger";
         else if (this.getArea() > otherRect.getArea())
-            return 1;
+            return "larger";
         else
-            return 0;
+            return "equal";
     }
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        RectanglePlus rectangle = new RectanglePlus(5, 4);
+        RectanglePlus rectangle2 = new RectanglePlus(new Point(1,2), 10, 11);
+        System.out.println("rectangle area is: " + rectangle.getArea());
+        System.out.println("Comparison: rectangle is " + rectangle.isLarger(rectangle2) + " than rectangle2");
     }
 }
 
