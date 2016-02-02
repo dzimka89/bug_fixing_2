@@ -1,5 +1,7 @@
 package bugs.bug_6_NullPointerException;
 
+import java.util.Scanner;
+
 public class Printer {
     private String name;
 
@@ -8,6 +10,8 @@ public class Printer {
     }
 
     public void print() {
+        Scanner scan = new Scanner(System.in);
+        setName("Vasya");
         printString(name);
     }
 
@@ -19,4 +23,5 @@ public class Printer {
         Printer printer = new Printer();
         printer.print();
     }
+
 }

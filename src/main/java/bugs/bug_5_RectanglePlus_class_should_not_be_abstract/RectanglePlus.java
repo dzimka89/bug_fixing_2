@@ -59,6 +59,7 @@ public class RectanglePlus implements Relatable {
         RectanglePlus rectangle2 = new RectanglePlus(new Point(1,2), 10, 11);
         System.out.println("rectangle area is: " + rectangle.getArea());
         System.out.println("Comparison: rectangle is " + rectangle.isLarger(rectangle2) + " than rectangle2");
+
     }
 }
 
