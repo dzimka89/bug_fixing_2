@@ -5,7 +5,7 @@ public class EnumTest {
         TestEnum[] values = TestEnum.values();
 
         for (TestEnum testEnum : values) {
-            // testEnum.printVeryImportantInformation(); //DOES NOT WORK
+             testEnum.printVeryImportantInformation(); //DOES NOT WORK
         }
     }
 }

@@ -21,7 +21,7 @@ public class ArrayTest {
     }
 
     public static int getMin(int num[]) {
-      
+
 
         int lowestNum = num[0];
         for (int j = 0; j < num.length; j++) {

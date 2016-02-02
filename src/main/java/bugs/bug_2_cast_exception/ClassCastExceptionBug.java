@@ -15,7 +15,7 @@ class A {
 
     int a = 10;
 
-    public void doSomethimg() {
+    public void doSomething() {
         System.out.println("class A");
     }
 
@@ -25,7 +25,7 @@ class B extends A {
 
     int a = 20;
 
-    public void doSomethimg() {
+    public void doSomething() {
         System.out.println("class B");
     }
 
